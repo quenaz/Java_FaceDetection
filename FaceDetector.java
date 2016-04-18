@@ -32,7 +32,7 @@ public class FaceDetector {
 					System.out.println("Frame Obtained");
 					System.out.println("Captured Frame Width " +
 					frame.width() + " Height " + frame.height());
-					Imgcodecs.imwrite("D:\\Users\\quenaz\\Desktop\\camera.jpg", frame);
+					Imgcodecs.imwrite("camera.jpg", frame);
 					System.out.println("OK");
 					
 					System.out.println("\nRunning FaceDetector");
