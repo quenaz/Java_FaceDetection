@@ -16,7 +16,7 @@ public class FaceDetector {
 			System.out.println("Error: Initializing camera failed!");
 		else
 		{
-			CascadeClassifier faceDetector = new CascadeClassifier("D:\\Users\\quenaz\\Documents\\workspace\\OpenCV_Java\\src\\haarcascade_frontalface_alt.xml");
+			CascadeClassifier faceDetector = new CascadeClassifier("haarcascade_frontalface_alt.xml");
 			
 			if(faceDetector.empty()) {
 				System.out.println("\nError: faceDetector");
@@ -49,7 +49,7 @@ public class FaceDetector {
 				                    new Scalar(0, 255, 0));
 				        }
 				        
-				        String filename = "D:\\Users\\quenaz\\Desktop\\output.jpg";
+				        String filename = "output.jpg";
 				        System.out.println(String.format("Writing %s", filename));
 				        Imgcodecs.imwrite(filename, frame);
 			        }
